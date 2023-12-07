@@ -1,15 +1,17 @@
 from faker import Faker
 
-VALID_EMAIL = "mankevichalina2+10@gmail.com"
-VALID_PASSWORD = "tester1"
+class LoginData:
 
-EMAIL_FOR_REGISTRATION = "mankevichalina2+13@gmail.com"
-PASSWORD_FOR_REGISTRATION = "tester2"
+    VALID_EMAIL = "mankevichalina2+10@gmail.com"
+    VALID_PASSWORD = "tester1"
 
-fake = Faker()
+    EMAIL_FOR_REGISTRATION = "mankevichalina2+13@gmail.com"
+    PASSWORD_FOR_REGISTRATION = "tester2"
 
-REGISTER_USER_EMAIL = fake.email()
-REGISTER_USER_PASSWORD = fake.password()
+    fake = Faker()
+
+    REGISTER_USER_EMAIL = fake.email()
+    REGISTER_USER_PASSWORD = fake.password()
 
 
 
